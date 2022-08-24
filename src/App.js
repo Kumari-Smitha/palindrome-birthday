@@ -200,7 +200,7 @@ const getPrevPalindrome = (input) => {
  
 
   const calulatePalindrome = ()=>{
-    // { day: '14', month: '09', year: '2020' }
+    // { day: '14', month: '08', year: '2022' }
     const input = calculateInput();
     
     // // [false, false, false, false, false, false]
@@ -229,21 +229,23 @@ const getPrevPalindrome = (input) => {
   }
 
   return (
+    <>
+    {/* <div className="bg-image"></div> */}
     <div className="App">
-      <h1>Palindrome Birthday!</h1>
-      <h4>Enter your Birthday date:</h4>
+      <h1 >Palindrome Birthday!</h1>
+      <h4 >Enter your Birthday date:</h4>
 
       <div className='input-date'>
         <input onChange={(e)=>seInputdate(e.target.value)} type="date"/>
         <button onClick={calulatePalindrome}>Show</button>
       </div>
 
-      <p>{text}</p>
-      <footer>
-        <p>© | 2022 | KumariSmitha</p>
-      </footer>
-
+      <p className='display-text'>{text}</p>
     </div>
+    <footer className='footer'>
+    <p>© | 2022 | KumariSmitha</p>
+  </footer>
+  </>
   );
 }
 
