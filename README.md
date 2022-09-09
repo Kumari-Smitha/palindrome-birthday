@@ -10,7 +10,7 @@ Here's a sneak peak of my app:
 
 
 
-
+This app is coded in ReactJS, HTML, CSS.
 You can just download the code in your system and run below commands to see the magic.
 
 npm install
