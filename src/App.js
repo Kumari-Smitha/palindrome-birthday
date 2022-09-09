@@ -218,12 +218,12 @@ const getPrevPalindrome = (input) => {
       const [count2, prevDate] = getPrevPalindrome(input);
 
         if(count1 > count2){
-          setText("Oops! The nearest palindrome date is "+prevDate.day+"-"+prevDate.month+"-"+prevDate.year+", you missed by "+count2+" days.");
+          setText("Oops!😐 The nearest palindrome date is "+prevDate.day+"-"+prevDate.month+"-"+prevDate.year+", you missed by "+count2+" days.");
         }else {
-          setText("Oops! The nearest palindrome date is "+nextDate.day+"-"+nextDate.month+"-"+nextDate.year+", you missed by "+count1+" days.");
+          setText("Oops!😐 The nearest palindrome date is "+nextDate.day+"-"+nextDate.month+"-"+nextDate.year+", you missed by "+count1+" days.");
         }
     } else {
-      setText("Wohoo! Your birthday date is a palindrome!" );
+      setText("Wohoo! Your birthday date is a palindrome!🥳🥳" );
     }    
     
   }
@@ -232,7 +232,7 @@ const getPrevPalindrome = (input) => {
     <>
     {/* <div className="bg-image"></div> */}
     <div className="App">
-      <h1 >Palindrome Birthday!</h1>
+      <h1 >Is Your Palindrome Birthday! 🤔</h1>
       <h4 >Enter your Birthday date:</h4>
 
       <div className='input-date'>
@@ -243,8 +243,13 @@ const getPrevPalindrome = (input) => {
       <p className='display-text'>{text}</p>
     </div>
     <footer className='footer'>
-    <p>© | 2022 | KumariSmitha</p>
-  </footer>
+      <p className="footerText">© | 2022 | Kumari Smitha</p>
+      <ul>
+        <li><a href="https://github.com/Kumari-Smitha"><img src="github.png" alt="github"/></a></li>
+        <li><a href="https://github.com/Kumari-Smitha"><img src="linkedin.png" alt="linkedin"/></a></li>
+        <li><a href="https://github.com/Kumari-Smitha"><img src="twitter.png" alt="twitter"/></a></li>
+      </ul>
+    </footer>
   </>
   );
 }

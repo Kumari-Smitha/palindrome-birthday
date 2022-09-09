@@ -13,7 +13,7 @@ h1, h4{
   font-family: var(--heading-font) ;
 }
 h1{
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
 }
 .App{
 
@@ -65,7 +65,33 @@ button{
 }
 
 .footer{
+  position: fixed;
+  width: 94vw;
+  height: 4rem;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid ;
+  box-shadow: 5px 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #639108;
   
-  left: 45%;
-  position: absolute;
+}
+
+.footerText{
+  color: black;
+  
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+}
+
+img{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+  
 }
